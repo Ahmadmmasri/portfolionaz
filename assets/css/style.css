@@ -90,7 +90,6 @@ h6 {
 
 #header h2 span {
     color: #fff;
-    border-bottom: 2px solid #18d26e;
     padding-bottom: 6px;
     font-weight: bolder;
 }
@@ -1361,5 +1360,11 @@ a.langBtn:focus {
         display: none;
         margin-bottom: 20px;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body::before {
+        background: linear-gradient(to bottom, #959596 0%, #d1cfd0 100%);
     }
 }

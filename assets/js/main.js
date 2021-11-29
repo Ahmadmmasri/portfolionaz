@@ -249,7 +249,6 @@
 
     on("submit", 'form', function() {
         document.getElementById("Message").style.display = "none";
-
         Swal.fire({
             title: 'Message has been sent successfully!',
             showClass: {
@@ -276,7 +275,7 @@
 
 function notifyBar() {
     if (!$('.alert-box').length) {
-        $('<div class="alert-box success" ></div>').prependTo('body').delay(5000).fadeOut(1000, function() {
+        $('<div class="alert-box success"></div>').prependTo('body').delay(5000).fadeOut(1000, function() {
             $('.alert-box').remove();
         });
     };

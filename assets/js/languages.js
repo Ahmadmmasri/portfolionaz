@@ -46,29 +46,7 @@ var languages = {
         Music: "Müzik",
         Davet: "Davet",
         Problem_solve: "Problem çözme",
-        Testimonials: "Musteri degerlendirmeleri",
-        OpinionEmpty1: "",
-        person_ProfessionEmpty1: "",
-        OpinionEmpty2: "",
-        person_ProfessionEmpty2: "",
-        OpinionEmpty3: "",
-        person_ProfessionEmpty3: "",
-        Opinion1: "opnion 1",
-        person_Profession1: "Profession 1",
-        Opinion2: "opnion 2",
-        person_Profession2: "Profession 2",
-        Opinion3: "opnion 3",
-        person_Profession3: "Profession 3",
-        Opinion4: "opnion 4",
-        person_Profession4: "Profession 4",
-        Opinion5: "opnion 5",
-        person_Profession5: "Profession 5",
-        Opinion6: "opnion 6",
-        person_Profession6: "Profession 6",
-        Opinion7: "opnion 7",
-        person_Profession7: "Profession 7",
-        end: "opnion 8",
-        end_Profession8: "Profession 8",
+
         //end of About section
         //----------------------------------------
         //Resume section
@@ -149,6 +127,7 @@ class Translate {
         })
 
         document.getElementById("tyr").addEventListener("click", () => {
+            document.getElementById("testimonials").style.display = "none";
             this.translate("turkish")
         });
         document.getElementById("en").addEventListener("click", () => {
